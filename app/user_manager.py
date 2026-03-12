@@ -1,4 +1,5 @@
 class UserManager:
+    
     def __init__(self):
         self.users = []
 
