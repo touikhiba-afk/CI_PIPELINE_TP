@@ -4,7 +4,6 @@ class UserManager:
     def __init__(self):
        self.users = []
        
-       
     
     def add_user(self, username):
         if not username:
@@ -14,16 +13,12 @@ class UserManager:
         self.users.append(username)
         
         
-        
     def remove_user(self, username):
         if username not in self.users:
             raise ValueError("Utilisateur introvable")
         self.users.remove(username)
     
     
-    
     def count_users(self):
         return len(self.users)
-    
-    
     
